@@ -1,0 +1,89 @@
+.btn-standard {
+    padding: 1.4rem 1.5rem;
+    border-radius: 4px;
+    background-color: $c1;
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    span {
+        padding-left: 6px;
+    }
+}
+
+.btn-sign {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    height: 55px;
+    background-color: $c1;
+    color: $color-white;
+    text-transform: uppercase;
+}
+
+.btn-submit{
+    padding: 1.5rem 4rem;
+    border-radius: 4px;
+    background-color: $c1;
+    color: $color-white;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: ease-out .3s;
+
+    &:focus{
+        outline: none;
+    }
+
+    &:hover{
+        background-color: darken($c1, 10%);
+    }
+
+    &.--width{
+        width: 100%;
+    }
+}
+
+.btn-add {
+    padding: 1.4rem 1.5rem;
+    border-radius: 4px;
+    background-color: $c1;
+    color: $color-white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 1px solid $c1;
+
+    span {
+        padding-left: 6px;
+    }
+}
+
+.button-return{
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    background-color: $color-blue; 
+    border-radius: 50%;
+    border: none;
+    height: 6rem;
+    width: 6rem;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s ease;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .fa {
+        font-weight: 800;
+        font-size: 2rem;
+        color: $color-white;
+    }
+
+    &:hover{
+        box-shadow: $box-shadow;
+    }
+}

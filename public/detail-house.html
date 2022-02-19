@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="css/nice-select.css">
+
+</head>
+
+<body>
+    <!--navigation-->
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation-content">
+                <div class="box_logo-menu">
+                    <div class="logo">
+                        <h1 class="title"><span>x</span>aleya</h1>
+                    </div>
+                    <ul class="list-menu">
+                        <div class="head_sidebar">
+                            <h1 class="title"><span>x</span>aleya</h1>
+                            <div class="icon_close"><i class="fa fa-close"></i></div>
+                        </div>
+                        <li class="menu-link">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="room.html">Rooms</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="room.html">House</a>
+                        </li>
+                        <li class="menu-link">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <div class="get_in_touch">
+                            <h4 class="title">Get in touch</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Address: 44 New Design Street,
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="#">Email:info@design.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    Phone: +0477 85X6 552
+                                </li>
+                                <li>
+                                    <i class="fa fa-fax"></i>
+                                    Fax: +0477 85X6 552
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="box_action">
+                    <div class="box_user">
+                        <div class="avatar">
+                            <img src="images/avatar.png" alt="avatar">
+                        </div>
+                        <div class="b_user">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-list" aria-hidden="true"></i>
+                                        list of reservations
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Sign out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="login.html">
+                        <button class="btn-standard">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <span>S'identifier</span>
+                        </button>
+                    </a>
+                    <div class="icon-menu">
+                        <img src="images/menu.png" alt="icons">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header banner -->
+    <div class="header_banner">
+        <img src="images/banner-slider-1.jpg" alt="banner">
+        <div class="container">
+            <h3 class="header_banner-title">Détails hotel</h3>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="details-house">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                        <div class="house-description">
+                            <div class="box-img">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <a data-fancybox="gallery" data-src="images/banner-slider-1.jpg">
+                                            <div class="illustration">
+                                                <img src="images/banner-slider-1.jpg" alt="img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="illustration --small-height">
+                                            <a data-fancybox="gallery" data-src="images/banner-slider-2.jpg">
+                                                <img src="images/banner-slider-2.jpg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="illustration --small-height">
+                                            <a data-fancybox="gallery" data-src="images/banner-slider-1.jpg">
+                                                <img src="images/banner-slider-1.jpg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="illustration --small-height">
+                                            <a data-fancybox="gallery" data-src="images/banner-slider-3.jpg">
+                                                <img src="images/banner-slider-3.jpg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="illustration --small-height">
+                                            <a data-fancybox="gallery" data-src="images/banner-slider-2.jpg">
+                                                <img src="images/banner-slider-2.jpg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="illustration --small-height">
+                                            <a data-fancybox="gallery" data-src="images/banner-slider-3.jpg">
+                                                <img src="images/banner-slider-3.jpg" alt="img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="title">
+                                Sofitel - Hotel ivoire
+                            </h2>
+                            <span class="location">
+                                Cocody, Abidjan, Côte d'ivoire
+                            </span>
+                        </div>
+                        <div class="tabs-desc">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-description-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-description" type="button" role="tab"
+                                        aria-controls="pills-description" aria-selected="true">Description</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-feature-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-feature" type="button" role="tab"
+                                        aria-controls="pills-feature" aria-selected="false">feature</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-advantage-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-advantage" type="button" role="tab"
+                                        aria-controls="pills-advantage" aria-selected="false">advantage</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-description" role="tabpanel"
+                                    aria-labelledby="pills-description-tab">
+                                    <div class="content">
+                                        <p class="paragraph">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi minima deserunt
+                                            quibusdam? Quasi laudantium cupiditate inventore, impedit eius laborum
+                                            reiciendis iste omnis similique quam voluptatum nihil aperiam iusto!
+                                            Perferendis, repudiandae.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla cupiditate
+                                            repellendus, dignissimos eos eveniet adipisci dolorum obcaecati maxime
+                                            blanditiis vero, ullam corrupti minima voluptate, vel accusantium earum?
+                                            Maiores, ad eveniet.
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore neque odit
+                                            adipisci accusantium harum animi, voluptates vel vitae est soluta natus ducimus,
+                                            tenetur architecto ab debitis nisi eveniet, quam non.
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis blanditiis
+                                            quibusdam quasi! Iure repudiandae reprehenderit adipisci autem doloremque ipsam
+                                            voluptates expedita laudantium, ab numquam natus possimus rerum vero placeat
+                                            est.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci autem corrupti
+                                            itaque fuga corporis cumque sapiente porro quisquam quam beatae laboriosam
+                                            consequuntur dolore, molestiae ea illo veniam vitae, odio in.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-feature" role="tabpanel"
+                                    aria-labelledby="pills-feature-tab">
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Air conditioning</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>2 Bedroom</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Room Service</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Free Newspaper</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Free Wi-Fi</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Air conditioning</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>2 Bedroom</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Room Service</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Free Newspaper</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                                                <div class="item-feature">
+                                                    <span>&#9784;</span>
+                                                    <h4>Free Wi-Fi</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-advantage" role="tabpanel"
+                                    aria-labelledby="pills-advantage-tab">
+                                    <div class="content">
+                                        <div class="item-feature --items">
+                                            <span>&#10070;</span>
+                                            <h4>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic quam corporis quod provident sapiente ipsa eius animi quibusdam adipisci accusantium?
+                                            </h4>
+                                        </div>
+                                        <div class="item-feature --items">
+                                            <span>&#10070;</span>
+                                            <h4>
+                                                Hic quam corporis quod provident sapiente ipsa eius animi quibusdam adipisci accusantium?
+                                            </h4>
+                                        </div>
+                                        <div class="item-feature --items">
+                                            <span>&#10070;</span>
+                                            <h4>
+                                                Hic quam corporis quod provident sapiente ipsa eius animi quibusdam adipisci accusantium?
+                                            </h4>
+                                        </div>
+                                        <div class="item-feature --items">
+                                            <span>&#10070;</span>
+                                            <h4>
+                                                Hic quam corporis quod provident sapiente ipsa eius animi quibusdam adipisci accusantium?
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="box-reservation">
+                            <div class="head">
+                                <h4 class="price">50.000 Fcfa / Nuit</h4>
+                            </div>
+                            <div class="body">
+                                <form class="form-reservation">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="group-input">
+                                                <!-- <label for="date_start">Date d'arrivée</label> -->
+                                                <label for="datepicker">
+                                                    Date d'arrivée
+                                                    <input type="text" id="datepicker" autocomplete="off" placeholder="-- -- --">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="group-input">
+                                                <label for="datepicker">
+                                                    Date de depart
+                                                    <input type="text" id="datepicker" autocomplete="off" placeholder="-- -- --">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="group-input">
+                                                <div class="box-select">
+                                                    <label for="">Adulte(s)</label>
+                                                    <select>
+                                                        <option data-display="----">----</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="group-input">
+                                                <div class="box-select">
+                                                    <label for="">Enfant(s)</label>
+                                                    <select>
+                                                        <option data-display="----">----</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="label-title">Autres options</label>
+                                            <div class="group-checkbox">
+                                                <input type="checkbox" value="choice_1" id="choice_1" class="ckeck">
+                                                <label for="choice_1">
+                                                    <div class="choice-content">
+                                                        <div class="icon"></div>
+                                                        <span>Petit dejeuner par personne</span>
+                                                    </div>
+                                                    <span class="price">5000 fcfa</span>
+                                                </label>
+                                            </div>
+                                            <div class="group-checkbox">
+                                                <input type="checkbox" value="choice_2" id="choice_2" class="ckeck">
+                                                <label for="choice_2">
+                                                    <div class="choice-content">
+                                                        <div class="icon"></div>
+                                                        <span>Petit dejeuner par personne</span>
+                                                    </div>
+                                                    <span class="price">5000 fcfa</span>
+                                                </label>
+                                            </div>
+                                            <div class="group-checkbox">
+                                                <input type="checkbox" value="choice_3" id="choice_3" class="ckeck">
+                                                <label for="choice_3">
+                                                    <div class="choice-content">
+                                                        <div class="icon"></div>
+                                                        <span>Petit dejeuner par personne</span>
+                                                    </div>
+                                                    <span class="price">5000 fcfa</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-5">
+                                            <label class="label-title">Prix</label>
+                                            <div class="box-price">
+                                                <div class="box-choice">
+                                                    <div class="item-choice">
+                                                        <h4>1 nuit</h4>
+                                                        <span>50 000 fcfa</span>
+                                                    </div>
+                                                    <div class="item-choice">
+                                                        <h4>Petit dejeuner par personne</h4>
+                                                        <span>10 000 fcfa</span>
+                                                    </div>
+                                                    <div class="item-choice">
+                                                        <h4>Service gratuit</h4>
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-choice --big">
+                                                    <h4>Prix total</h4>
+                                                    <span>60 000 fcfa</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn-submit --width mt-5">Reserver</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="title">Contact us</h4>
+                        <ul>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                Address: 44 New Design Street,
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a href="#">Email:info@design.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                Phone: +0477 85X6 552
+                            </li>
+                            <li>
+                                <i class="fa fa-fax"></i>
+                                Fax: +0477 85X6 552
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-2">
+                    <div class="footer-item">
+                        <h4 class="title">Booking</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Rooms & Suites</a>
+                            </li>
+                            <li>
+                                <a href="#">Restaurant</a>
+                            </li>
+                            <li>
+                                <a href="#">Hotel</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Facilties</a>
+                            </li>
+                            <li>
+                                <a href="#">Rooms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-2">
+                    <div class="footer-item">
+                        <h4 class="title">About</h4>
+                        <ul>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog &amp; Events</a>
+                            </li>
+                            <li>
+                                <a href="#">Booking</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="title">Newsletter</h4>
+                        <ul>
+                            <li>
+                                Excepteur sint occaecat cupidatat non proident, 
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </li>
+                            <li>
+                                <form action="" class="form_newsletter">
+                                    <input type="email" placeholder="Your Email">
+                                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copy-right">
+        <div class="container">
+            <div class="content">
+                <p class="paragraph">&copy; 2022 Web design. All Rights Reserved.</p>
+                <div class="r_sociaux">
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="google">
+                        <i class="fa fa-google"></i>
+                    </a>
+                    <a href="#" class="linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- button top -->
+    <div class="button-return" id="btnReturn" hidden>
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                dateFormat: "dd-mm-yy"
+                , duration: "fast"
+            });
+            $("#datepicker2").datepicker({
+                dateFormat: "dd-mm-yy"
+                , duration: "fast"
+            });
+        });
+    </script>
+
+    <script script src="js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+    </script>
+</body>
+
+</html>

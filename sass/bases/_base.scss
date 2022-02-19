@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*:focus{
+    outline: none !important;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif !important;
+    
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: rgba($c1, .3);
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $c2;
+        border-radius: 50rem;
+    }
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+a, a:hover{
+    text-decoration: none !important;
+}
+
+button, button:focus {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.section {
+    padding: 10rem 0;
+
+    @include respond-tabport {
+        padding: 5rem 0;
+    }
+}
+
+.--c_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}

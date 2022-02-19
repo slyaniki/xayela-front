@@ -1,0 +1,181 @@
+.section_list_room {
+
+    .btn_filter {
+        display: none;
+
+        @include respond-tabport {
+            display: block;
+        }
+    }
+
+    .b_filtre {
+        background-color: $color-white;
+        padding: 2rem;
+        border-radius: 4px;
+        box-shadow: $box-shadow;
+        position: sticky;
+        top: 20rem;
+
+        @include respond-tabport {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            width: 30rem;
+            z-index: 20;
+            overflow-x: hidden;
+            transition: all .4s ease;
+        }
+
+        &.active {
+            right: 0;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            background-color: rgba($color-blue, .05);
+
+            .fa {
+                margin-left: 2rem;
+                font-size: 2rem;
+            }
+
+            input {
+                width: 100%;
+                height: 5rem;
+                font-size: 1.6rem;
+                border: none;
+                background-color: transparent;
+                padding: 2rem;
+            }
+        }
+
+        .accordion {
+            margin: 2rem 0;
+
+            .accordion-button {
+                font-size: 1.6rem;
+                padding: 2rem;
+            }
+
+            .accordion-body {
+                .form-check {
+                    font-size: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    padding-left: 0 !important;
+                    padding: 1rem 0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba($color-black, .1);
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+
+        @include respond-phone {
+            flex-wrap: wrap;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .form-select {
+            width: 30%;
+            height: 5rem;
+            font-size: 1.6rem;
+            border-radius: 4px;
+            padding: 0 8px;
+
+            @include respond-phone {
+                width: 100%;
+                display: block;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+// pagination 
+.box-paginate {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .paragraph {
+        font-weight: 600;
+        margin-bottom: 0 !important;
+        font-family: 1.8rem;
+
+        @include respond-phone {
+            margin-left: 2rem;
+        }
+    }
+
+    .my-pagination {
+        padding: 1rem;
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        @include respond-phone {
+            margin-bottom: 1rem;
+        }
+
+        .btn-prev-next {
+            height: 4rem;
+            width: 4rem;
+            background-color: $c1;
+            border-radius: 50rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease;
+
+            &:hover {
+                background-color: darken($c1, 10%);
+            }
+
+            .fa {
+                color: $color-white;
+                font-size: 1.5rem;
+                margin-top: 3px;
+            }
+        }
+
+        .number {
+            margin: 0 1.5rem;
+
+            span {
+                padding: 0 1rem;
+                color: $color-black;
+                font-size: 1.7rem;
+
+                a {
+                    color: $c1;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: darken($c1, 10%);
+                    }
+
+                    &.active {
+                        color: $color-red;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.section-contact{
+    padding: 7rem 0;
+
+    & .ss-title{
+        font-size: 4rem;
+        color: $color-title;
+        margin-bottom: 2rem !important;
+    }
+
+    & .list-icon{
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+
+        & .icon{
+            height: 4rem;
+            width: 4rem;
+            background-color: $c1;
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+    }
+}

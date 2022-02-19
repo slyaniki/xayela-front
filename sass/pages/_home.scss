@@ -1,0 +1,275 @@
+.section_about {
+    @include respond-tabportXs  {
+        margin-top: 10rem;
+    }
+
+    @include respond-phone  {
+        margin-top: 2rem;
+    }
+
+    .content {
+        margin-bottom: 4rem;
+    }
+
+    .box-image {
+        height: 35rem;
+        position: relative;
+
+        @include respond-tabport {
+            height: 40rem;
+        }
+
+        @include respond-phoneXs {
+            height: 30rem;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+
+            @include respond-tabport {
+                object-fit: cover;
+            }
+        }
+
+        .box-image_abs {
+            height: 15rem;
+            width: 20rem;
+            position: absolute;
+            bottom: -8rem;
+            right: 0;
+            box-shadow: $box-shadow;
+            border-radius: 4px;
+            overflow: hidden;
+
+            @include respond-tabport {
+                right: 3rem;
+                bottom: -7rem;
+            }
+
+            @include respond-phoneXs {
+                display: none;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.section_city {
+    .box_title {
+        margin-bottom: 2rem;
+
+        span {
+            font-size: 2rem;
+            color: $c1;
+        }
+
+        .title {
+            font-size: 5rem;
+            font-weight: 700;
+            color: $color-black;
+
+            @include respond-tabport {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+.section_rooms {
+    background-color: #f5f5f5;
+}
+
+.banner_stats {
+    // height: 25rem;
+    position: relative;
+    padding: 4rem 0;
+
+    &::after {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // background-color: rgba($color-black, .4);
+    }
+
+    .account {
+        position: relative;
+        text-align: center;
+        margin: 5px 0;
+
+        .counting {
+            font-size: 5rem;
+            color: $color-white;
+        }
+
+        h5 {
+            font-size: 2rem;
+            color: $color-white;
+            font-weight: 700;
+        }
+    }
+}
+
+.section_testimonial {
+    background-color: #f5f5f5;
+
+    @include respond-tabportXs {
+        padding: 3rem 0;
+    }
+
+    .content {
+        text-align: center;
+        max-width: 80%;
+        margin: 4rem auto;
+
+        @include respond-tabportXs  {
+            max-width: 100%;
+        }
+
+        &:hover {
+            .avatar {
+                transform: scale(1.2);
+                border: 6px solid $c1;
+            }
+        }
+
+        .avatar {
+            margin: 2rem auto 0;
+            height: 10rem;
+            width: 10rem;
+            overflow: hidden;
+            border-radius: 50rem;
+            border: 5px solid rgba($color-white, .1);
+            box-shadow: $box-shadow;
+            transition: all 2s ease;
+            
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+//********** style calendar
+input:focus {outline: none;}
+#ui-datepicker-div {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+    margin-top: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.box-select {
+    // margin: 2rem 0;
+
+    .nice-select {
+        width: 100% !important;
+        padding-left: 0 !important;
+        border-bottom: 1px solid rgba($color-black, .1) !important;
+        line-height: 3.5rem;
+        font-size: 1.6rem;
+        border-radius: 8px;
+
+        .list {
+            width: 100%;
+        }
+    }
+}
+
+.ui-datepicker-calendar thead th {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $c1;
+}
+.ui-datepicker-calendar tbody td {
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+    display: block;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    transition: 0.3s all;
+    color: #546E7A;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {	
+    background-color: rgba($c1, .5);
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: $c1;
+    color: $color-white;
+}
+.ui-datepicker-header a.ui-corner-all {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+    background-color: #ECEFF1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {	
+    left: 0;	
+    top: 5px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 50%;
+    transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+    right: 0;
+    top: 5px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 50%;
+}
+
+.ui-datepicker-header a>span {
+    display: none;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+    color: #78909C;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
